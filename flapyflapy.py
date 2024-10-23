@@ -14,13 +14,6 @@ WIDTH, HEIGHT = 1024, 768  # Aumentando a resolução
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Flappy Bolsonaro vs Canos Lula")
 
-# Carregar a música
-try:
-    pygame.mixer.music.load('caminho/para/sua/musica.mp3')  # Substitua pelo caminho do seu arquivo de música
-    pygame.mixer.music.play(-1)  # -1 faz a música tocar em loop
-except Exception as e:
-    logging.error("Erro ao carregar a música: %s", e)
-
 # Cores
 BLACK = (0, 0, 0)
 ORANGE = (255, 165, 0)
